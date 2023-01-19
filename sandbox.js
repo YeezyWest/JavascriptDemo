@@ -162,7 +162,7 @@
 // console.log(random)
 // console.log( Math.round(Math.random() * 100));  
 
-//DOM ===========================
+//DOM eventListener ===========================
 
 // const paras = document.querySelectorAll('p');
 
@@ -222,103 +222,103 @@
 //     }
 // });
 
-// // // // // // // // const article = document.querySelector('article')
+//  const article = document.querySelector('article')
 
-// // // // // // // // // console.log(article.children)
-// // // // // // // // // Array.from(article.children).forEach(element => {
-// // // // // // // // //     element.classList.add('plus');
-// // // // // // // // // });
-// // // // // // // const ul = document.querySelector('ul');
+// console.log(article.children)
+// Array.from(article.children).forEach(element => {
+//     element.classList.add('plus');
+// });
+// const ul = document.querySelector('ul');
 
-// // // // // // // const button = document.querySelector('button');
+// const button = document.querySelector('button');
 
-// // // // // // // button.addEventListener('click', () =>{
-// // // // // // //     const li = document.createElement('li');
-// // // // // // //     li.innerHTML = '<li class="click">Added something</li>';
-// // // // // // //     ul.prepend(li);
+// button.addEventListener('click', () =>{
+//     const li = document.createElement('li');
+//     li.innerHTML = '<li class="click">Added something</li>';
+//     ul.prepend(li);
 
-// // // // // // // })
+// })
 
-// // // // // // // const list = document.querySelectorAll('li');
+// const list = document.querySelectorAll('li');
 
-// // // // // // // list.forEach(element => {
-// // // // // // //    ul.addEventListener('click', (e) => {
-// // // // // // //     e.target.remove()
-// // // // // // //    }); 
-// // // // // // // });
-// // // // // // const ul = document.querySelector('ul');
+// list.forEach(element => {
+//    ul.addEventListener('click', (e) => {
+//     e.target.remove()
+//    }); 
+// });
+// const ul = document.querySelector('ul');
 
-// // // // // // const button = document.querySelector('button')
+// const button = document.querySelector('button')
 
-// // // // // // button.addEventListener('click' , ()=> {
-// // // // // //    const li = document.createElement('li');
-// // // // // //    li.innerHTML = "<li class = 'click'>something new </li>";
-// // // // // //    ul.prepend(li)
-// // // // // // });
+// button.addEventListener('click' , ()=> {
+//    const li = document.createElement('li');
+//    li.innerHTML = "<li class = 'click'>something new </li>";
+//    ul.prepend(li)
+// });
 
-// // // // // // // const list = document.querySelectorAll('li');
+// const list = document.querySelectorAll('li');
 
-// // // // // // // list.forEach(item => {
-// // // // // // //     item.addEventListener('click' , (e) => {
-// // // // // // //         e.target.remove();
-// // // // // // //     })
-// // // // // // // });
+// list.forEach(item => {
+//     item.addEventListener('click' , (e) => {
+//         e.target.remove();
+//     })
+// });
 
-// // // // // // ul.addEventListener('click' , (e)=> {
-// // // // // //    if (e.target.tagName === 'LI'){
-// // // // // //     e.target.remove();
-// // // // // //    }
-// // // // // // });
+// ul.addEventListener('click' , (e)=> {
+//    if (e.target.tagName === 'LI'){
+//     e.target.remove();
+//    }
+// });
 
-// // // // // const copy = document.querySelector('.copy');
+// const copy = document.querySelector('.copy');
 
-// // // // // copy.addEventListener('copy', () => {
-// // // // //     console.log("dnt do that")
-// // // // // })
+// copy.addEventListener('copy', () => {
+//     console.log("dnt do that")
+// })
 
-// // // const ul = document.querySelector('ul');
+// const ul = document.querySelector('ul');
 
-// // // ul.addEventListener('click' , (e)=> {
-// // //         if (e.target.tagName === 'LI'){
-// // //          e.target.remove();
-// // //         }
-// // //     });
+// ul.addEventListener('click' , (e)=> {
+//         if (e.target.tagName === 'LI'){
+//          e.target.remove();
+//         }
+//     });
 
-// // // const button = document.querySelector('button');
+// const button = document.querySelector('button');
 
-// // // button.addEventListener('click', ()=> {
-// // //     const li = document.createElement('li');
-// // //     li.innerHTML = "<li class = 'click'>New todo</li>"
-// // //     ul.prepend(li)
-// // // })
+// button.addEventListener('click', ()=> {
+//     const li = document.createElement('li');
+//     li.innerHTML = "<li class = 'click'>New todo</li>"
+//     ul.prepend(li)
+// })
 
-// // // const pick = document.querySelector('.yo');
+// const pick = document.querySelector('.yo');
 
-// // // pick.addEventListener('mousemove', e => {
-// // //     pick.textContent = e.offsetX, e.offsetY
-// // // }); 
+// pick.addEventListener('mousemove', e => {
+//     pick.textContent = e.offsetX, e.offsetY
+// }); 
 
-// // // const button = document.querySelector('.Btn');
-// // // const content = document.querySelector('.content');
-// // // const close = document.querySelector('.close');
+// const button = document.querySelector('.Btn');
+// const content = document.querySelector('.content');
+// const close = document.querySelector('.close');
 
-// // // button.addEventListener('click', () => {
-// // //    content.style.display = 'block';  
-// // // });
+// button.addEventListener('click', () => {
+//    content.style.display = 'block';  
+// });
 
-// // // close.addEventListener('click', () => {
-// // //     content.style.display = 'none';  
-// // //  });
-
-
-
-// //  const sign = document.querySelector('.signup-form');
+// close.addEventListener('click', () => {
+//     content.style.display = 'none';  
+//  });
 
 
-// // sign.addEventListener('submit', e => {
-// //    e.preventDefault();
-// //    console.log(sign.username.value)
-// // })
+
+//  const sign = document.querySelector('.signup-form');
+
+
+// sign.addEventListener('submit', e => {
+//    e.preventDefault();
+//    console.log(sign.username.value)
+// })
 
 // // const username = 'yusufo'
 // // const pathern = /^[a-z]{6,}$/
@@ -619,61 +619,33 @@
 // // console.log(new Date(timestamps))
 
 // Async javascript ==============
-
-// const getTodos = (resource, callback) => {
-//       const request = new XMLHttpRequest();
-//       request.addEventListener('readystatechange', () => {
-//             if (request.readyState === 4 && request.status === 200) {
-//                   const data = JSON.parse(request.responseText)
-//                   callback(undefined, data);
-//             } else if (request.readyState === 4) {
-//                   callback('couldnt fetch request', undefined)
-//             }
-//       });
-
-//       request.open('GET', resource);
-//       request.send();
-// };
-
-// getTodos('todos/ade.json', (err, data) => {
-//       console.log(data);
-//       getTodos('todos/ola.json', (err, data) => {
-//             console.log(data);
-//             getTodos('todos/yusuf.json', (err, data) => {
-//                   console.log(data);
-//             });
-//       });
-// });
-
-// //promise  example
-// const getSomething = () => {
-
-//       return
-// }
-
-const getTodo = (resource, callback) => {
-const request = new XMLHttpRequest();
-request.addEventListener('readystatechange', () => {
-    if(request.readyState === 4 && request.status === 200) {
-      const data = JSON.parse(request.responseText);
-      callback(undefined, data);
-    } else if(request.readyState === 4) {
-      callback('couldnt fetch data from server', undefined);
-    } 
-});
-request.open('GET', resource);
-request.send();
-
-};
-
-getTodo('todos/ade.json', (err,data) => {
-      console.log(data);
-      getTodo('todos/ola.json', (err,data) => {
-      console.log(data);
-      getTodo('todos/yusuf.json', (err,data) => {
-        console.log(data);
-        });
+      const getTodo = (resource, callback) => {
+      const request = new XMLHttpRequest();
+      request.addEventListener('readystatechange', () => {
+      if(request.readyState === 4 && request.status === 200) {
+            const data = JSON.parse(request.responseText);
+            callback(undefined, data);
+      } else if(request.readyState === 4) {
+            callback('couldnt fetch data from server', undefined);
+      } 
       });
-    });
+      request.open('GET', resource);
+      request.send();
+
+      };
+
+      getTodo('todos/ade.json', (err,data) => {
+            console.log(data);
+            getTodo('todos/ola.json', (err,data) => {
+            console.log(data);
+            getTodo('todos/yusuf.json', (err,data) => {
+            console.log(data);
+            });
+            });
+      });
+
+      //promise 
+
+      
 
 
