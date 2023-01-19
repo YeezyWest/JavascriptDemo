@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dist/output.css">
+    <title>Todo-App</title>
+</head>
+<body class="bg-[#352f5b] font-Poppins">
+
+  <div class="">
+   <!--top-section-->
+    <header class="">
+        <h1 class="text-white text-5xl font-bold text-center my-8">Todo List</h1>
+        <form class="search px-5 md:px-96" >
+          <input type="text" class="bg-gray-900 border border-blue-600 text-gray-100 text-sm rounded-md block w-full p-3 focus:border-green-900 focus:right-1 focus:ring-green-900 focus:outline-none shadow-2xl shadow-black" name="search" placeholder="search todos">
+        </form>
+    </header>
+
+    <!--todo-list--> 
+<ul class="px-10 md:px-96 todos ">
+  <li class="border-b-2 p-4 pb-3 sm:pb-4 shadow-2xl shadow-black">
+     <div class="flex items-center space-x-4">
+        
+        <div class="flex-1 min-w-0">
+           <p class="text-xl font-medium text-white">
+              just they play 😎
+           </p>
+        </div>
+        <i class="fa-solid fa-trash-can text-red-900 text-xl cursor-pointer delete"></i>
+        </div>
+  </li>
+  <li class="border-b-2 p-4 py-3 sm:py-4 shadow-2xl shadow-black">
+    <div class="flex items-center space-x-4">
+        
+      <div class="flex-1 min-w-0">
+         <p class="text-xl font-medium text-white">
+            just they sleep 😅
+         </p>
+      </div>
+      <i class="fa-solid fa-trash-can text-red-900 text-xl cursor-pointer delete"></i>
+      </div>
+  </li>
+  <li class="border-b-2 p-4 py-3 sm:py-4 shadow-2xl shadow-black">
+    <div class="flex items-center space-x-4">
+        
+      <div class="flex-1 min-w-0">
+         <p class="text-xl font-medium text-white">
+            keep playing😂
+            
+         </p>
+      </div>
+      <i class="fa-solid fa-trash-can text-red-900 text-xl cursor-pointer delete"></i>
+      </div>
+  </li>
+</ul>
+
+
+    <!--add-todo-->
+    <form class="add flex flex-col justify-center px-5 md:px-96 ">
+      <label class="text-center text-white mt-8 mb-4 text-2xl"> Add new todo..</label>
+      <input class="bg-gray-900 border border-blue-600 text-white font-bold text-sm rounded-md block w-full p-3 focus:border-green-900 focus:right-1 focus:ring-green-900 focus:outline-none shadow-2xl shadow-black" type="text" name="add" placeholder="what your plans?">
+    </form>
+
+  </div>
+<!--time-->
+  <div class="clock text-center text-4xl text-white font-black"></div>
+  
+  
+    <script  src="sandbox.js"></script>
+</body>
+</html>
