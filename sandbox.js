@@ -1,4 +1,4 @@
-//DECLARING VARIABLES
+//DECLARING VARIABLES ====================
 
 // const title = 'Head Master';
 // const author = 'West';
@@ -27,7 +27,7 @@
 //     console.log("NAHHHHHHHHHH!!!!!!")
 // }
 
-//SWITCH cases
+//SWITCH cases =====================
 
 // const grade = 'F';
 
@@ -54,7 +54,7 @@
 //         console.log("Invalid grade")
 // }
 
-// DECLARING A FUNCTION
+// DECLARING A FUNCTIONS ==========================
 
 // function greet() {
 //     console.log("Yellllo!!");
@@ -73,154 +73,154 @@
 // console.log(area)
 
 
-// // // // // // // // // // // // // // // // // // // const aishaDay = ['waking up' , ' eating' , ' going to work']
+// const aishaDay = ['waking up' , ' eating' , ' going to work']
+// for( let i = 0; i < aishaDay.length; i++ ){
+//     console.log(aishaDay[i])
+// }
+// callAisha()
+// callAisha()
+// callAisha()
+// callAisha()
+// callAisha()
+// callAisha()
+// callAisha()
+// callAisha()
+// const aishaDay = function(){
+//    let day1 = ['waking up' , ' eating' , ' going to work']
+//     for( let i = 0; i < day1.length; i++ ){
+//   console.log(day1[i])
+// }
+// }
+// aishaDay();
 
-// // // // // // // // // // // // // // // // // // // for( let i = 0; i < aishaDay.length; i++ ){
-// // // // // // // // // // // // // // // // // // //     console.log(aishaDay[i])
-// // // // // // // // // // // // // // // // // // // }
+// const greet = () => {
+//     return 'Hello, World!';
+// };
 
-// // // // // // // // // // // // // // // // // // // callAisha()
-// // // // // // // // // // // // // // // // // // // callAisha()
-// // // // // // // // // // // // // // // // // // // callAisha()
-// // // // // // // // // // // // // // // // // // // callAisha()
-// // // // // // // // // // // // // // // // // // // callAisha()
-// // // // // // // // // // // // // // // // // // // callAisha()
-// // // // // // // // // // // // // // // // // // // callAisha()
-// // // // // // // // // // // // // // // // // // // callAisha()
+// const print = greet();
+// console.log(print)
 
-// // // // // // // // // // // // // // // // // // const aishaDay = function(){
-// // // // // // // // // // // // // // // // // //    let day1 = ['waking up' , ' eating' , ' going to work']
-// // // // // // // // // // // // // // // // // //     for( let i = 0; i < day1.length; i++ ){
-// // // // // // // // // // // // // // // // // //   console.log(day1[i])
-// // // // // // // // // // // // // // // // // // }
-// // // // // // // // // // // // // // // // // // }
-// // // // // // // // // // // // // // // // // // aishaDay();
-
-// // // // // // // // // // // // // // // // // const greet = () => {
-// // // // // // // // // // // // // // // // //     return 'Hello, World!';
-// // // // // // // // // // // // // // // // // };
-
-// // // // // // // // // // // // // // // // // const print = greet();
-// // // // // // // // // // // // // // // // // console.log(print)
-
-// // // // // // // // // // // // // // // // // const bill = (products, tax) => {
-// // // // // // // // // // // // // // // // //     let total = 0;
-// // // // // // // // // // // // // // // // //     for(let i = 0; i < products.length; i++){
-// // // // // // // // // // // // // // // // //         total += products[i] + products[i] * tax;
-// // // // // // // // // // // // // // // // //     }
-// // // // // // // // // // // // // // // // //     return total;
-// // // // // // // // // // // // // // // // // }
+// const bill = (products, tax) => {
+//     let total = 0;
+//     for(let i = 0; i < products.length; i++){
+//         total += products[i] + products[i] * tax;
+//     }
+//     return total;
+// }
+// console.log(bill([20,40,30], 5.5));
 
 
-// // // // // // // // // // // // // // // // // console.log(bill([20,40,30], 5.5));
+// let people = ['yusuf', 'olatunji', 'west', 'yeezy'];
 
-// // // // // // // // // // // // // // // // let people = ['yusuf', 'olatunji', 'west', 'yeezy'];
+// const logPerson = (element, index) => {
+//     console.log(`${index} - Hello ${element}`);
+// }
+// people.forEach(logPerson);
 
-// // // // // // // // // // // // // // // // const logPerson = (element, index) => {
-// // // // // // // // // // // // // // // //     console.log(`${index} - Hello ${element}`);
-// // // // // // // // // // // // // // // // }
+//OBJECT =============
 
-// // // // // // // // // // // // // // // // people.forEach(logPerson);
+// let user = {
+//     name : 'Yusuf',
+//     age : 22,
+//     email : 'yusuf@gmail.com',
+//     location : 'kwara state',
+//     blogs : [
+//         { title : 'yo!! Was awesome' , likes : 30,},
+//         { title : 'completed' , likes : 30,}
+//     ],
+//     login: () => {
+//     console.log(`the user login`);
+//     },
 
+//     logBlog : function () {
+//       console.log(`the content of the blog :`);
+//       this.blogs.forEach(blog => {
+//         console.log(blog.title , blog.likes);
+//       });
+//     }
+// };
 
-// // // // // // // // // // // // // // // let user = {
-// // // // // // // // // // // // // // //     name : 'Yusuf',
-// // // // // // // // // // // // // // //     age : 22,
-// // // // // // // // // // // // // // //     email : 'yusuf@gmail.com',
-// // // // // // // // // // // // // // //     location : 'kwara state',
-// // // // // // // // // // // // // // //     blogs : [
-// // // // // // // // // // // // // // //         { title : 'yo!! Was awesome' , likes : 30,},
-// // // // // // // // // // // // // // //         { title : 'completed' , likes : 30,}
-// // // // // // // // // // // // // // //     ],
-// // // // // // // // // // // // // // //     login: () => {
-// // // // // // // // // // // // // // //     console.log(`the user login`);
-// // // // // // // // // // // // // // //     },
+// console.log(user);
+// console.log(user.age);
 
-// // // // // // // // // // // // // // //     logBlog : function () {
-// // // // // // // // // // // // // // //       console.log(`the content of the blog :`);
-// // // // // // // // // // // // // // //       this.blogs.forEach(blog => {
-// // // // // // // // // // // // // // //         console.log(blog.title , blog.likes);
-// // // // // // // // // // // // // // //       });
-// // // // // // // // // // // // // // //     }
-// // // // // // // // // // // // // // // };
+//  user.age = 30
+//  console.log(user.age);
 
-// // // // // // // // // // // // // // // console.log(user);
-// // // // // // // // // // // // // // // console.log(user.age);
+//  console.log(user['email'])
 
-// // // // // // // // // // // // // // //  user.age = 30
-// // // // // // // // // // // // // // //  console.log(user.age);
+//  const email = user.email
+//  console.log(user.email)
 
-// // // // // // // // // // // // // // //  console.log(user['email'])
+// user.login();
 
-// // // // // // // // // // // // // // //  const email = user.email
-// // // // // // // // // // // // // // //  console.log(user.email)
+// user.logBlog();
 
-// // // // // // // // // // // // // // // user.login();
+//MATH ==================
 
-// // // // // // // // // // // // // // // user.logBlog();
+// const random = Math.random();
 
-// // // // // // // // // // // // // // const random = Math.random();
+// console.log(random)
+// console.log( Math.round(Math.random() * 100));  
 
-// // // // // // // // // // // // // // console.log(random)
-// // // // // // // // // // // // // // console.log( Math.round(Math.random() * 100));  
+//DOM ===========================
 
-// // // // // // // // // // // // // const paras = document.querySelectorAll('p');
+// const paras = document.querySelectorAll('p');
 
-// // // // // // // // // // // // // paras.forEach(element => {
-// // // // // // // // // // // // //     console.log(element.innerText);
-// // // // // // // // // // // // //     element.innerText += "-New text"
-// // // // // // // // // // // // // });
+// paras.forEach(element => {
+//     console.log(element.innerText);
+//     element.innerText += "-New text"
+// });
 
-// // // // // // // // // // // // // // paras.innerText = "-New paras";
-
-
-
-// // // // // // // // // // // // const list = document.querySelector('.content');
-
-// // // // // // // // // // // // const people = ['Yusuf','olatunji','West','Yeezy'];
-
-// // // // // // // // // // // // people.forEach(person => {
-// // // // // // // // // // // //   list.innerHTML += `<li>${person}</li>`
-// // // // // // // // // // // // });
-
-// // // // // // // // // // // const link = document.querySelector('a');
-
-// // // // // // // // // // // console.log(link.getAttribute('href'));
-
-// // // // // // // // // // // link.setAttribute('href', 'https://wwww.facebook.com');
-
-// // // // // // // // // // // console.log(link.getAttribute('href'));
-
-// // // // // // // // // // // const color = document.querySelector('p')
-
-// // // // // // // // // // // color.setAttribute('style', 'color:green');
-
-// // // // // // // // // // // const pick = document.querySelector('h1');
-
-// // // // // // // // // // // console.log(pick.style);
-
-// // // // // // // // // // // pick.style.marginLeft = '50px';
-// // // // // // // // // // // pick.style.color = 'purple';
-
-// // // // // // // // // // const content = document.querySelectorAll('p');
-
-// // // // // // // // // // content.forEach(element => {
-// // // // // // // // // //     if(element.innerText.includes('error')) {
-// // // // // // // // // //         element.classList.add('error');
-// // // // // // // // // //     } else if (element.innerText.includes('succes')){
-// // // // // // // // // //         element.classList.add('succes');
-// // // // // // // // // //     }
-// // // // // // // // // // });
+// paras.innerText = "-New paras";
 
 
-// // // // // // // // // const content = document.querySelectorAll('p');
-// // // // // // // // // content.forEach(element => {
-// // // // // // // // //     if( element.innerText.includes('succes')){
-// // // // // // // // //         element.classList.add('succes');
-// // // // // // // // //     } else if( element.innerText.includes('error') ){
-// // // // // // // // //         element.classList.add('error');
-// // // // // // // // //     }
-// // // // // // // // // });
+
+// const list = document.querySelector('.content');
+
+// const people = ['Yusuf','olatunji','West','Yeezy'];
+
+// people.forEach(person => {
+//   list.innerHTML += `<li>${person}</li>`
+// });
+
+// const link = document.querySelector('a');
+
+// console.log(link.getAttribute('href'));
+
+// link.setAttribute('href', 'https://wwww.facebook.com');
+
+// console.log(link.getAttribute('href'));
+
+// const color = document.querySelector('p')
+
+// color.setAttribute('style', 'color:green');
+
+// const pick = document.querySelector('h1');
+
+// console.log(pick.style);
+
+// pick.style.marginLeft = '50px';
+// pick.style.color = 'purple';
+
+// const content = document.querySelectorAll('p');
+
+// content.forEach(element => {
+//     if(element.innerText.includes('error')) {
+//         element.classList.add('error');
+//     } else if (element.innerText.includes('succes')){
+//         element.classList.add('succes');
+//     }
+// });
+
+
+// const content = document.querySelectorAll('p');
+// content.forEach(element => {
+//     if( element.innerText.includes('succes')){
+//         element.classList.add('succes');
+//     } else if( element.innerText.includes('error') ){
+//         element.classList.add('error');
+//     }
+// });
 
 // // // // // // // // const article = document.querySelector('article')
 
@@ -618,59 +618,62 @@
 
 // // console.log(new Date(timestamps))
 
-// Async javascript
+// Async javascript ==============
 
-// const getTodos = (resource , callback) => {
+// const getTodos = (resource, callback) => {
 //       const request = new XMLHttpRequest();
-
 //       request.addEventListener('readystatechange', () => {
 //             if (request.readyState === 4 && request.status === 200) {
-//                   const data = JSON.parse(request.responseText);
-//               callback(undefined, data);
+//                   const data = JSON.parse(request.responseText)
+//                   callback(undefined, data);
 //             } else if (request.readyState === 4) {
-//                   callback('couldnt fetch data' , undefined)
+//                   callback('couldnt fetch request', undefined)
 //             }
 //       });
 
 //       request.open('GET', resource);
-//        request.send();
+//       request.send();
 // };
 
-// getTodos( 'todos/yusuf.json', (err , data) => {
-//    console.log(data);
-//    getTodos( 'todos/ola.json', (err , data) => {
+// getTodos('todos/ade.json', (err, data) => {
 //       console.log(data);
-//    })
+//       getTodos('todos/ola.json', (err, data) => {
+//             console.log(data);
+//             getTodos('todos/yusuf.json', (err, data) => {
+//                   console.log(data);
+//             });
+//       });
 // });
 
-const getTodos = (resource, callback) => {
-      const request = new XMLHttpRequest();
+// //promise  example
+// const getSomething = () => {
 
-      request.addEventListener('readystatechange', () => {
-            if (request.readyState === 4 && request.status === 200) {
-                  const data = JSON.parse(request.responseText)
-                  callback(undefined, data);
-            } else if (request.readyState === 4) {
-                  callback('couldnt fetch request', undefined)
-            }
-      });
+//       return
+// }
 
-      request.open('GET', resource);
-      request.send();
+const getTodo = (resource, callback) => {
+const request = new XMLHttpRequest();
+request.addEventListener('readystatechange', () => {
+    if(request.readyState === 4 && request.status === 200) {
+      const data = JSON.parse(request.responseText);
+      callback(undefined, data);
+    } else if(request.readyState === 4) {
+      callback('couldnt fetch data from server', undefined);
+    } 
+});
+request.open('GET', resource);
+request.send();
+
 };
 
-getTodos('todos/ade.json', (err, data) => {
+getTodo('todos/ade.json', (err,data) => {
       console.log(data);
-      getTodos('todos/ola.json', (err, data) => {
-            console.log(data);
-            getTodos('todos/yusuf.json', (err, data) => {
-                  console.log(data);
-            });
+      getTodo('todos/ola.json', (err,data) => {
+      console.log(data);
+      getTodo('todos/yusuf.json', (err,data) => {
+        console.log(data);
+        });
       });
-});
+    });
 
-//promise  example
-const getSomething = () => {
 
-      return
-}
