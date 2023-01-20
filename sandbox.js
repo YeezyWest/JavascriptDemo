@@ -619,32 +619,37 @@
 // // console.log(new Date(timestamps))
 
 // Async javascript ==============
-      const getTodo = (resource, callback) => {
-      const request = new XMLHttpRequest();
-      request.addEventListener('readystatechange', () => {
-      if(request.readyState === 4 && request.status === 200) {
-            const data = JSON.parse(request.responseText);
-            callback(undefined, data);
-      } else if(request.readyState === 4) {
-            callback('couldnt fetch data from server', undefined);
-      } 
-      });
-      request.open('GET', resource);
-      request.send();
+      const getTodo = (resource) => {
+      //promise 
+            return new Promise((resolve,reject) => {
+                  const request = new XMLHttpRequest();
 
+                  request.addEventListener('readystatechange', () => {
+                  if(request.readyState === 4 && request.status === 200) {
+                        const data = JSON.parse(request.responseText);
+                        resolve(data);
+                  } else if(request.readyState === 4) {
+                        reject('couldnt fetch data from server');
+                  } 
+                  });
+                  request.open('GET', resource);
+                  request.send();
+            
+                  });
       };
 
-      getTodo('todos/ade.json', (err,data) => {
-            console.log(data);
-            getTodo('todos/ola.json', (err,data) => {
-            console.log(data);
-            getTodo('todos/yusuf.json', (err,data) => {
-            console.log(data);
-            });
-            });
+      getTodo('todos/ade.json').then(data => {
+            console.log('promise 1 resolved', data);
+            return getTodo('todos/ola.json' , data);
+      }).then(data => {
+            console.log('promise 2 resolved', data);
+            return getTodo('todos/yusuf.json', data);
+      }).then(data => {
+            console.log('promise 3 resolved', data);
+      }).catch(err => {
+            console.log('promise rejected:', err);
       });
-
-      //promise 
+                 
 
       
 
