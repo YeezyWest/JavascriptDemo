@@ -619,36 +619,48 @@
 // // console.log(new Date(timestamps))
 
 // Async javascript ==============
-      const getTodo = (resource) => {
+      // const getTodo = (resource) => {
       //promise 
-            return new Promise((resolve,reject) => {
-                  const request = new XMLHttpRequest();
+      //       return new Promise((resolve,reject) => {
+      //             const request = new XMLHttpRequest();
 
-                  request.addEventListener('readystatechange', () => {
-                  if(request.readyState === 4 && request.status === 200) {
-                        const data = JSON.parse(request.responseText);
-                        resolve(data);
-                  } else if(request.readyState === 4) {
-                        reject('couldnt fetch data from server');
-                  } 
-                  });
-                  request.open('GET', resource);
-                  request.send();
+      //             request.addEventListener('readystatechange', () => {
+      //             if(request.readyState === 4 && request.status === 200) {
+      //                   const data = JSON.parse(request.responseText);
+      //                   resolve(data);
+      //             } else if(request.readyState === 4) {
+      //                   reject('couldnt fetch data from server');
+      //             } 
+      //             });
+      //             request.open('GET', resource);
+      //             request.send();
             
-                  });
-      };
+      //             });
+      // };
 
-      getTodo('todos/ade.json').then(data => {
-            console.log('promise 1 resolved', data);
-            return getTodo('todos/ola.json' , data);
-      }).then(data => {
-            console.log('promise 2 resolved', data);
-            return getTodo('todos/yusuf.json', data);
-      }).then(data => {
-            console.log('promise 3 resolved', data);
-      }).catch(err => {
-            console.log('promise rejected:', err);
-      });
+      // getTodo('todos/ade.json').then(data => {
+      //       console.log('promise 1 resolved', data);
+      //       return getTodo('todos/ola.json' , data);
+      // }).then(data => {
+      //       console.log('promise 2 resolved', data);
+      //       return getTodo('todos/yusuf.json', data);
+      // }).then(data => {
+      //       console.log('promise 3 resolved', data);
+      // }).catch(err => {
+      //       console.log('promise rejected:', err);
+      // });
+
+      //fetch api
+     fetch('todos/yusuf.json').then(res => {
+      console.log('resolved: res');
+      return res.json();
+     }).then(data => {
+        console.log( data);
+     }).catch(err => {
+      console.log('rejected:',err);
+     });
+
+     //Async and await
                  
 
       
