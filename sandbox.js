@@ -390,111 +390,111 @@
 
 
 
-// // // // // // // let output = 0;
-// // // // // // // const timer = setInterval(() => {
-// // // // // // // result.querySelector('span').textContent = `${output}%`;
-// // // // // // // if(output === score){
-// // // // // // //   clearInterval(timer);
-// // // // // // // } else {
-// // // // // // //   output++;
-// // // // // // // }
+// let output = 0;
+// const timer = setInterval(() => {
+// result.querySelector('span').textContent = `${output}%`;
+// if(output === score){
+//   clearInterval(timer);
+// } else {
+//   output++;
+// }
 
-// // // // // // // }, 10);
-
-
-// // // // // // // });
-
-// // // // // // // const scores = [10, 30, 40, 50, 60, 80, 90, 100];
-
-// // // // // // // const filterScore = scores.filter((score) => {
-// // // // // // //   return score > 20
-// // // // // // // }); 
-// // // // // // // console.log(filterScore);
-
-// // // // // // const user = [
-// // // // // //   { name: 'yusuf', premium: true},
-// // // // // //   { name: 'ola', premium: false},
-// // // // // //   { name: 'tunji', premium: false},
-// // // // // //   { name: 'west', premium: true}
-// // // // // // ];
-
-// // // // // // const premiumUser = user.filter(user => {
-// // // // // //   return user.premium
-// // // // // // });
-
-// // // // // // console.log(premiumUser);
-
-// // // // // const products = [
-// // // // //   { name: 'yusuf', price: 20},
-// // // // //   { name: 'Ola', price: 40},
-// // // // //   { name: 'west', price: 30},
-// // // // //   { name: 'Ade', price: 50},
-// // // // //   { name: 'tunji', price: 60},
-
-// // // // // ];
-
-// // // // // const newProduct = products.map( (product) =>{
-// // // // //   if(product.price > 30){
-// // // // //     return { name: product.name, price: product.price /2 }
-// // // // //   } else {
-// // // // //     return product;
-// // // // //   }
-// // // // // });
-
-// // // // // console.log(newProduct);
-
-// // // // const products = [
-// // // //   { name: 'yusuf', price: 20},
-// // // //   { name: 'Ola', price: 40},
-// // // //   { name: 'yusuf', price: 30},
-// // // //   { name: 'yusuf', price: 50},
-// // // //   { name: 'ola', price: 60},
-// // // //   { name: 'yusuf', price: 30},
-// // // //   { name: 'yusuf', price: 50},
-// // // //   { name: 'ola', price: 60},
-// // // //   { name: 'yusuf', price: 30},
-// // // //   { name: 'yusuf', price: 50},
-// // // //   { name: 'ola', price: 60},
+// }, 10);
 
 
+// });
 
-// // // // ];
+// const scores = [10, 30, 40, 50, 60, 80, 90, 100];
 
-// // // // const totalPrice = products.reduce((acc,curr ) => {
-// // // //   if (curr.name === 'yusuf') {
-// // // //     acc += curr.price;
-// // // //   }
-// // // //   return acc;
-// // // //  }, 0 );
+// const filterScore = scores.filter((score) => {
+//   return score > 20
+// }); 
+// console.log(filterScore);
 
-// // // //  console.log(totalPrice);
+// const user = [
+//   { name: 'yusuf', premium: true},
+//   { name: 'ola', premium: false},
+//   { name: 'tunji', premium: false},
+//   { name: 'west', premium: true}
+// ];
 
-// // const players = [
-// //   { name: 'yusuf', price: 20},
-// //   { name: 'Ola', price: 40},
-// //   { name: 'Ade', price: 30},
-// //   { name: 'west', price: 60},
-// //   { name: 'tunji', price: 60},  
-// // ];
+// const premiumUser = user.filter(user => {
+//   return user.premium
+// });
 
-// // const promos = players.filter(product => product.price > 20 )
-// //                .map(product => `the following ${product.name} is ${product.price /2 } pounds`)
+// console.log(premiumUser);
 
-// // console.log(promos);
+// const products = [
+//   { name: 'yusuf', price: 20},
+//   { name: 'Ola', price: 40},
+//   { name: 'west', price: 30},
+//   { name: 'Ade', price: 50},
+//   { name: 'tunji', price: 60},
 
-// // // players.sort( (a,b) =>{
-// // //   return b.price - a.price
-// // // });
+// ];
 
-// // // console.log(players);
+// const newProduct = products.map( (product) =>{
+//   if(product.price > 30){
+//     return { name: product.name, price: product.price /2 }
+//   } else {
+//     return product;
+//   }
+// });
+
+// console.log(newProduct);
+
+// const products = [
+//   { name: 'yusuf', price: 20},
+//   { name: 'Ola', price: 40},
+//   { name: 'yusuf', price: 30},
+//   { name: 'yusuf', price: 50},
+//   { name: 'ola', price: 60},
+//   { name: 'yusuf', price: 30},
+//   { name: 'yusuf', price: 50},
+//   { name: 'ola', price: 60},
+//   { name: 'yusuf', price: 30},
+//   { name: 'yusuf', price: 50},
+//   { name: 'ola', price: 60},
 
 
-// // const scores = [10, 30, 40, 50, 60, 80, 90, 100];
 
-// // scores.sort((a,b) =>{
-// //   return b-a
-// // })
-// // console.log(scores);
+//];
+
+// const totalPrice = products.reduce((acc,curr ) => {
+//   if (curr.name === 'yusuf') {
+//     acc += curr.price;
+//   }
+//   return acc;
+//  }, 0 );
+
+//  console.log(totalPrice);
+
+//const players = [
+//   { name: 'yusuf', price: 20},
+//   { name: 'Ola', price: 40},
+//   { name: 'Ade', price: 30},
+//   { name: 'west', price: 60},
+//   { name: 'tunji', price: 60},  
+// ];
+
+// const promos = players.filter(product => product.price > 20 )
+//                .map(product => `the following ${product.name} is ${product.price /2 } pounds`)
+
+// console.log(promos);
+
+// players.sort( (a,b) =>{
+//   return b.price - a.price
+// });
+
+// console.log(players);
+
+
+// const scores = [10, 30, 40, 50, 60, 80, 90, 100];
+
+// scores.sort((a,b) =>{
+//   return b-a
+// })
+// console.log(scores);
 
 
 // const addForm = document.querySelector('.add');
@@ -594,75 +594,109 @@
 // // const now = new Date();
 
 
-// // //year and month
+// //year and month
 
-// // console.log(`getFullYear:`, now.getFullYear());
-// // console.log(`getMonth:`, now.getMonth());
-// // console.log(`getDate:`, now.getDate());
-// // console.log(`getDay:`, now.getDay());
-// // console.log(`getHours:`, now.getHours());
-// // console.log(`getminutes:`, now.getMinutes());
-// // console.log(`getSeconds:`, now.getSeconds());
+// console.log(`getFullYear:`, now.getFullYear());
+// console.log(`getMonth:`, now.getMonth());
+// console.log(`getDate:`, now.getDate());
+// console.log(`getDay:`, now.getDay());
+// console.log(`getHours:`, now.getHours());
+// console.log(`getminutes:`, now.getMinutes());
+// console.log(`getSeconds:`, now.getSeconds());
 
-// // //timestamps
+// //timestamps
 
-// // console.log(`timestamps:`, now.getTime());
+// console.log(`timestamps:`, now.getTime());
 
-// // //date strings
+// //date strings
 
-// // console.log(`date strings:`, now.toDateString());
-// // console.log(`time strings:`, now.toTimeString());
-// // console.log(`time local:`, now.toLocaleString());
+// console.log(`date strings:`, now.toDateString());
+// console.log(`time strings:`, now.toTimeString());
+// console.log(`time local:`, now.toLocaleString());
 
-// // const timestamps = 672888429271;
+// const timestamps = 672888429271;
 
-// // console.log(new Date(timestamps))
+// console.log(new Date(timestamps))
 
 // Async javascript ==============
-      // const getTodo = (resource) => {
-      //promise 
-      //       return new Promise((resolve,reject) => {
-      //             const request = new XMLHttpRequest();
+// const getTodo = (resource) => {
+//promise 
+//       return new Promise((resolve,reject) => {
+//             const request = new XMLHttpRequest();
 
-      //             request.addEventListener('readystatechange', () => {
-      //             if(request.readyState === 4 && request.status === 200) {
-      //                   const data = JSON.parse(request.responseText);
-      //                   resolve(data);
-      //             } else if(request.readyState === 4) {
-      //                   reject('couldnt fetch data from server');
-      //             } 
-      //             });
-      //             request.open('GET', resource);
-      //             request.send();
-            
-      //             });
-      // };
+//             request.addEventListener('readystatechange', () => {
+//             if(request.readyState === 4 && request.status === 200) {
+//                   const data = JSON.parse(request.responseText);
+//                   resolve(data);
+//             } else if(request.readyState === 4) {
+//                   reject('couldnt fetch data from server');
+//             } 
+//             });
+//             request.open('GET', resource);
+//             request.send();
 
-      // getTodo('todos/ade.json').then(data => {
-      //       console.log('promise 1 resolved', data);
-      //       return getTodo('todos/ola.json' , data);
-      // }).then(data => {
-      //       console.log('promise 2 resolved', data);
-      //       return getTodo('todos/yusuf.json', data);
-      // }).then(data => {
-      //       console.log('promise 3 resolved', data);
-      // }).catch(err => {
-      //       console.log('promise rejected:', err);
-      // });
+//             });
+// };
 
-      //fetch api
-     fetch('todos/yusuf.json').then(res => {
-      console.log('resolved: res');
-      return res.json();
-     }).then(data => {
-        console.log( data);
-     }).catch(err => {
-      console.log('rejected:',err);
-     });
+// getTodo('todos/ade.json').then(data => {
+//       console.log('promise 1 resolved', data);
+//       return getTodo('todos/ola.json' , data);
+// }).then(data => {
+//       console.log('promise 2 resolved', data);
+//       return getTodo('todos/yusuf.json', data);
+// }).then(data => {
+//       console.log('promise 3 resolved', data);
+// }).catch(err => {
+//       console.log('promise rejected:', err);
+// });
 
-     //Async and await
-                 
+//fetch api=============
+//      fetch('todos/yusuf.json').then(res => {
+//       console.log('resolved:', res);
+//       return res.json();
+//      }).then(data => {
+//         console.log( data);
+//      }).catch(err => {
+//       console.log('rejected:',err);
+//      });
 
-      
+//Async and await
+//      const getTodos = async () => {
+
+//       const response = await fetch('todos/ade.json');
+
+//       if (response.status !== 200){
+//             throw new Error('Error: ' + response.status)
+//       }
+
+//       const data = await response.json();
 
 
+//       return data;
+
+//      };
+
+//      getTodos()
+//       .then(data => console.log('resolved:',data))
+//      .catch(err => console.log('rejected:',err.message));
+
+
+//localStorage======================
+//set localStorage
+localStorage.setItem('name', 'West')
+localStorage.setItem('age', 22)
+//get localStorage
+let name = localStorage.getItem('name')
+let age = localStorage.getItem('age')
+
+console.log(name, age);
+
+name = localStorage.setItem('name', 'yeezy')
+name = localStorage.getItem('name')
+console.log(name)
+//delete data from localStorage
+name = localStorage.removeItem('name')
+name = localStorage.removeItem('age')
+console.log(name)
+//clear localStorage
+localStorage.clear(name,age);
