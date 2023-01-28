@@ -683,20 +683,38 @@
 
 //localStorage======================
 //set localStorage
-localStorage.setItem('name', 'West')
-localStorage.setItem('age', 22)
+// localStorage.setItem('name', 'West')
+// localStorage.setItem('age', 22)
 //get localStorage
-let name = localStorage.getItem('name')
-let age = localStorage.getItem('age')
+// let name = localStorage.getItem('name')
+// let age = localStorage.getItem('age')
 
-console.log(name, age);
+// console.log(name, age);
 
-name = localStorage.setItem('name', 'yeezy')
-name = localStorage.getItem('name')
-console.log(name)
+// name = localStorage.setItem('name', 'yeezy')
+// name = localStorage.getItem('name')
+// console.log(name)
 //delete data from localStorage
-name = localStorage.removeItem('name')
-name = localStorage.removeItem('age')
-console.log(name)
+// name = localStorage.removeItem('name')
+// name = localStorage.removeItem('age')
+// console.log(name)
 //clear localStorage
-localStorage.clear(name,age);
+// localStorage.clear(name,age);
+
+// const players = [
+//   { name: 'yusuf', price: 20},
+//   { name: 'Ola', price: 40},
+//   { name: 'Ade', price: 30},
+//   { name: 'west', price: 60},
+//   { name: 'tunji', price: 60},  
+// ];
+
+// localStorage.setItem('players', JSON.stringify(players));
+
+// const stored = localStorage.getItem('players');
+// console.log(JSON.parse(stored)); 
+
+//OOP(OBJECT ORIENTED PROGRAMMING)========
+
+const newUser = new Array();
+console.log(newUser);
