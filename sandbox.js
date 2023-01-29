@@ -744,6 +744,9 @@ class User {
     }
 }
 
+//class inheritance
+
+
 const userOne = new User('yeezyWest', 'yeezy033@gmail.com');
 const userTwo = new User('Olatunji', 'West57@gmail.com');
 
