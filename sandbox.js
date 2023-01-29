@@ -716,5 +716,38 @@
 
 //OOP(OBJECT ORIENTED PROGRAMMING)========
 
-const newUser = new Array();
-console.log(newUser);
+// const newUser = new Array('20','30','40','50');
+// console.log(newUser);
+
+//classes
+
+class User {
+    //class constructors
+    constructor(username, email) {
+        //set propertise
+        this.username = username;
+        this.email = email;
+        this.score = 0;
+    }
+    login(){
+        console.log(`${this.username}: ${this.email} just logged in`);
+    return this
+    }
+    logout() {
+        console.log(`${this.username}: ${this.email}  logged out`); 
+    return this
+    }
+    incScore() {
+       this.score += 1
+       console.log(`this ${this.username}: Scored ${this.score}`);
+       return this
+    }
+}
+
+const userOne = new User('yeezyWest', 'yeezy033@gmail.com');
+const userTwo = new User('Olatunji', 'West57@gmail.com');
+
+//class methods & method chaining
+console.log(userOne, userTwo);
+userOne.login().incScore().incScore().logout()
+
