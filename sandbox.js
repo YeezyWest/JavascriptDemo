@@ -746,31 +746,63 @@ class User {
 
 //class inheritance
 
-class Admin extends User{
-    constructor(username, email, title){
-        //set properties
-        super(username, email)
-        this.title = title;
-    }
-   deleteUser (user){
-     users = users.filter(u => {
-        return u.username !== user.username;
-     })
-   }
-}
+// class Admin extends User{
+//     constructor(username, email, title){
+//         //set properties
+//         super(username, email)
+//         this.title = title;
+//     }
+//    deleteUser (user){
+//      users = users.filter(u => {
+//         return u.username !== user.username;
+//      })
+//    }
+// }
 
-const userOne = new User('yeezyWest', 'yeezy033@gmail.com');
-const userTwo = new User('Olatunji', 'West57@gmail.com');
-const userThree = new Admin('MrWest', 'Wnation@gmail.com', 'Odogu!!!!!!');
+// const userOne = new User('yeezyWest', 'yeezy033@gmail.com');
+// const userTwo = new User('Olatunji', 'West57@gmail.com');
+// const userThree = new Admin('MrWest', 'Wnation@gmail.com', 'Odogu!!!!!!');
 
 //class methods & method chaining
-console.log(userOne, userTwo , userThree);
+//console.log(userOne, userTwo , userThree);
 //userOne.login().incScore().incScore().logout().incScore()
 
-let users = [userOne, userTwo, userThree];
-console.log(users);
-console.log(users);
+// let users = [userOne, userTwo, userThree];
+// console.log(users);
+// console.log(users);
 
 // userThree.deleteUser(userTwo);
 // console.log(users);
+
+//CONTRUCTORS(UNDER THE HOOD)
+
+function user(username, email) {
+    this.username = username;
+    this.email = email;
+}
+
+user.prototype.login = function () {
+    console.log(`${this.username} just logged in`)
+    return this
+};
+
+user.prototype.logout = function () {
+    console.log(`${this.username} logged out`)
+    return this
+};
+
+function Admin(username, email, title) {
+    user.call(this, username, email)
+    this.title = title
+}
+
+Admin.prototype = Object.create(User.prototype);
+
+
+const userOne = new User('yusuf', 'ya@gmail.com');
+const userTwo = new User('Ola', 'ya@gmail.com');
+const userThree = new Admin('Ola', 'ya@gmail.com', 'blackman');
+
+console.log(userOne, userTwo, userThree);
+userOne.login().logout()
 
