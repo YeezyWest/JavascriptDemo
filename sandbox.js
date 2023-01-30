@@ -729,28 +729,48 @@ class User {
         this.email = email;
         this.score = 0;
     }
-    login(){
+    login() {
         console.log(`${this.username}: ${this.email} just logged in`);
-    return this
+        return this
     }
     logout() {
-        console.log(`${this.username}: ${this.email}  logged out`); 
-    return this
+        console.log(`${this.username}: ${this.email}  logged out`);
+        return this
     }
     incScore() {
-       this.score += 1
-       console.log(`this ${this.username}: Scored ${this.score}`);
-       return this
+        this.score += 1
+        console.log(`this ${this.username}: Scored ${this.score}`);
+        return this
     }
 }
 
 //class inheritance
 
+class Admin extends User{
+    constructor(username, email, title){
+        //set properties
+        super(username, email)
+        this.title = title;
+    }
+   deleteUser (user){
+     users = users.filter(u => {
+        return u.username !== user.username;
+     })
+   }
+}
 
 const userOne = new User('yeezyWest', 'yeezy033@gmail.com');
 const userTwo = new User('Olatunji', 'West57@gmail.com');
+const userThree = new Admin('MrWest', 'Wnation@gmail.com', 'Odogu!!!!!!');
 
 //class methods & method chaining
-console.log(userOne, userTwo);
-userOne.login().incScore().incScore().logout()
+console.log(userOne, userTwo , userThree);
+//userOne.login().incScore().incScore().logout().incScore()
+
+let users = [userOne, userTwo, userThree];
+console.log(users);
+console.log(users);
+
+// userThree.deleteUser(userTwo);
+// console.log(users);
 
