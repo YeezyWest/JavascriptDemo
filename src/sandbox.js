@@ -16,7 +16,7 @@
 // let name = "Yusuf";
 // let list = [ 'A' , 'B' , 'C' , 'D'];
 
-// let result = list.includes('B'); 
+// let result = list.includes('B');
 // console.log(result);
 
 // const names = ["Ali" , "yusuf" , "Ade" , "ola"];
@@ -32,22 +32,22 @@
 // const grade = 'F';
 
 // switch(grade) {
-//     case 'A': 
+//     case 'A':
 //     console.log("You got A!!");
 //     break;
-//     case 'B': 
+//     case 'B':
 //     console.log("You got B!!");
 //     break;
-//     case 'C': 
+//     case 'C':
 //     console.log("You got C!!");
 //     break;
-//     case 'D': 
+//     case 'D':
 //     console.log("You got D!!");
 //     break;
-//     case 'E': 
+//     case 'E':
 //     console.log("You got E!!");
 //     break;
-//     case 'F': 
+//     case 'F':
 //     console.log("You got F!!");
 //     break;
 //     default:
@@ -160,7 +160,7 @@
 // const random = Math.random();
 
 // console.log(random)
-// console.log( Math.round(Math.random() * 100));  
+// console.log( Math.round(Math.random() * 100));
 
 //DOM eventListener ===========================
 
@@ -244,7 +244,7 @@
 // list.forEach(element => {
 //    ul.addEventListener('click', (e) => {
 //     e.target.remove()
-//    }); 
+//    });
 // });
 // const ul = document.querySelector('ul');
 
@@ -296,18 +296,18 @@
 
 // pick.addEventListener('mousemove', e => {
 //     pick.textContent = e.offsetX, e.offsetY
-// }); 
+// });
 
 // const button = document.querySelector('.Btn');
 // const content = document.querySelector('.content');
 // const close = document.querySelector('.close');
 
 // button.addEventListener('click', () => {
-//    content.style.display = 'block';  
+//    content.style.display = 'block';
 // });
 
 // close.addEventListener('click', () => {
-//     content.style.display = 'none';  
+//     content.style.display = 'none';
 //  });
 
 
@@ -354,7 +354,7 @@
 // form.username.addEventListener('keyup', e => {
 //    if(usernamePattern.test(e.target.value)) {
 //      form.username.setAttribute('class' , 'succes');
-//    } else { 
+//    } else {
 //       form.username.setAttribute('class' , 'error');
 //    }
 // });
@@ -363,7 +363,7 @@
 // form.email.addEventListener('keyup', e => {
 //   if(emailPattern.test(e.target.value)) {
 //     form.email.setAttribute('class' , 'succes');
-//   } else { 
+//   } else {
 //      form.email.setAttribute('class' , 'error');
 //   }
 // });
@@ -408,7 +408,7 @@
 
 // const filterScore = scores.filter((score) => {
 //   return score > 20
-// }); 
+// });
 // console.log(filterScore);
 
 // const user = [
@@ -474,7 +474,7 @@
 //   { name: 'Ola', price: 40},
 //   { name: 'Ade', price: 30},
 //   { name: 'west', price: 60},
-//   { name: 'tunji', price: 60},  
+//   { name: 'tunji', price: 60},
 // ];
 
 // const promos = players.filter(product => product.price > 20 )
@@ -558,7 +558,7 @@
 
 //   };
 
-// //search 
+// //search
 
 
 // search.addEventListener('keyup', () => {
@@ -568,7 +568,7 @@
 
 // });
 
-// // date & times 
+// // date & times
 
 // const tick = () => {
 
@@ -578,11 +578,11 @@
 //   const m = now.getMinutes();
 //   const s = now.getSeconds();
 
-//   const html = 
+//   const html =
 //    `
 //   <span>${h}</span> :
 //   <span>${m}</span> :
-//   <span>${s}</span> 
+//   <span>${s}</span>
 //   `;
 
 //   clock.innerHTML = html;
@@ -620,7 +620,7 @@
 
 // Async javascript ==============
 // const getTodo = (resource) => {
-//promise 
+//promise
 //       return new Promise((resolve,reject) => {
 //             const request = new XMLHttpRequest();
 
@@ -630,7 +630,7 @@
 //                   resolve(data);
 //             } else if(request.readyState === 4) {
 //                   reject('couldnt fetch data from server');
-//             } 
+//             }
 //             });
 //             request.open('GET', resource);
 //             request.send();
@@ -706,13 +706,13 @@
 //   { name: 'Ola', price: 40},
 //   { name: 'Ade', price: 30},
 //   { name: 'west', price: 60},
-//   { name: 'tunji', price: 60},  
+//   { name: 'tunji', price: 60},
 // ];
 
 // localStorage.setItem('players', JSON.stringify(players));
 
 // const stored = localStorage.getItem('players');
-// console.log(JSON.parse(stored)); 
+// console.log(JSON.parse(stored));
 
 //OOP(OBJECT ORIENTED PROGRAMMING)========
 
@@ -721,28 +721,28 @@
 
 //classes
 
-class User {
-    //class constructors
-    constructor(username, email) {
-        //set propertise
-        this.username = username;
-        this.email = email;
-        this.score = 0;
-    }
-    login() {
-        console.log(`${this.username}: ${this.email} just logged in`);
-        return this
-    }
-    logout() {
-        console.log(`${this.username}: ${this.email}  logged out`);
-        return this
-    }
-    incScore() {
-        this.score += 1
-        console.log(`this ${this.username}: Scored ${this.score}`);
-        return this
-    }
-}
+// class User {
+//     //class constructors
+//     constructor(username, email) {
+//         //set propertise
+//         this.username = username;
+//         this.email = email;
+//         this.score = 0;
+//     }
+//     login() {
+//         console.log(`${this.username}: ${this.email} just logged in`);
+//         return this
+//     }
+//     logout() {
+//         console.log(`${this.username}: ${this.email}  logged out`);
+//         return this
+//     }
+//     incScore() {
+//         this.score += 1
+//         console.log(`this ${this.username}: Scored ${this.score}`);
+//         return this
+//     }
+// }
 
 //class inheritance
 
@@ -776,33 +776,75 @@ class User {
 
 //CONTRUCTORS(UNDER THE HOOD)
 
-function user(username, email) {
-    this.username = username;
-    this.email = email;
-}
+// function user(username, email) {
+//     this.username = username;
+//     this.email = email;
+// }
 
-user.prototype.login = function () {
-    console.log(`${this.username} just logged in`)
-    return this
+// user.prototype.login = function () {
+//     console.log(`${this.username} just logged in`)
+//     return this
+// };
+
+// user.prototype.logout = function () {
+//     console.log(`${this.username} logged out`)
+//     return this
+// };
+
+// function Admin(username, email, title) {
+//     user.call(this, username, email)
+//     this.title = title
+// }
+
+// Admin.prototype = Object.create(User.prototype);
+
+
+// const userOne = new User('yusuf', 'ya@gmail.com');
+// const userTwo = new User('Ola', 'ya@gmail.com');
+// const userThree = new Admin('Ola', 'ya@gmail.com', 'blackman');
+
+// console.log(userOne, userTwo, userThree);
+// userOne.login().logout()
+
+//FIREBASE========
+
+import { initialize } from 'firebase/app'
+import {
+    getFirestore, collection, getDocs, Snapshot
+} from 'firebase/firestore'
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBaYwyK_KvdPycg5f5wRAwHR43h6toVvMc",
+    authDomain: "fir-9-mrwest.firebaseapp.com",
+    projectId: "fir-9-mrwest",
+    storageBucket: "fir-9-mrwest.appspot.com",
+    messagingSenderId: "579672864947",
+    appId: "1:579672864947:web:2686db9a3ce03ab27958c6"
 };
 
-user.prototype.logout = function () {
-    console.log(`${this.username} logged out`)
-    return this
-};
-
-function Admin(username, email, title) {
-    user.call(this, username, email)
-    this.title = title
-}
-
-Admin.prototype = Object.create(User.prototype);
+//init firebase app
+initializeApp(firebaseConfig)
 
 
-const userOne = new User('yusuf', 'ya@gmail.com');
-const userTwo = new User('Ola', 'ya@gmail.com');
-const userThree = new Admin('Ola', 'ya@gmail.com', 'blackman');
+//init service
+const db = getFirestore()
 
-console.log(userOne, userTwo, userThree);
-userOne.login().logout()
 
+//collection ref
+const colRef = collection(db, 'books')
+
+
+//get collection data
+
+getDocs(colRef)
+    .then((Snapshot) => {
+        let books = [];
+        Snapshot.docChanges.forEach((doc) => {
+            books.push({ ...doc.data(), id: doc.id })
+        })
+
+        console.log(books)
+    })
+    .catch((err) => {
+        console.log(err.message)
+    });
