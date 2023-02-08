@@ -808,43 +808,16 @@
 
 //FIREBASE========
 
-import { initialize } from 'firebase/app'
-import {
-    getFirestore, collection, getDocs, Snapshot
-} from 'firebase/firestore'
+//rest parameters
+const double = (...nums) =>{
+    console.log(nums)
+    return nums.map((num) =>num * 2);
+}
+const result = double(1,3,5,6,7,87,3,32)
+console.log(result)
 
-const firebaseConfig = {
-    apiKey: "AIzaSyBaYwyK_KvdPycg5f5wRAwHR43h6toVvMc",
-    authDomain: "fir-9-mrwest.firebaseapp.com",
-    projectId: "fir-9-mrwest",
-    storageBucket: "fir-9-mrwest.appspot.com",
-    messagingSenderId: "579672864947",
-    appId: "1:579672864947:web:2686db9a3ce03ab27958c6"
-};
+//spread syntax (arrays)
 
-//init firebase app
-initializeApp(firebaseConfig)
-
-
-//init service
-const db = getFirestore()
-
-
-//collection ref
-const colRef = collection(db, 'books')
-
-
-//get collection data
-
-getDocs(colRef)
-    .then((Snapshot) => {
-        let books = [];
-        Snapshot.docChanges.forEach((doc) => {
-            books.push({ ...doc.data(), id: doc.id })
-        })
-
-        console.log(books)
-    })
-    .catch((err) => {
-        console.log(err.message)
-    });
+const people = ['yusuf','Ola', 'ade']
+const members = ['JK', 'Moa']
+console.log(members, ...people)
