@@ -821,3 +821,32 @@ console.log(result)
 const people = ['yusuf','Ola', 'ade']
 const members = ['JK', 'Moa']
 console.log(members, ...people)
+
+//spread  syntax (objects)
+
+const person = {
+    name: 'John',
+    age: 34,
+    job: 'front end development'
+}
+
+const clonePerson = {...person, Location: 'dutse'}
+
+console.log(clonePerson)
+
+//sets
+const namesArray = ['yusuf', 'ola', 'John', 'yusuf']
+
+console.log(namesArray)
+
+const nameSet = new Set(namesArray)
+console.log(nameSet)
+
+const uniqueName = [...nameSet];
+console.log(uniqueName)
+
+const age = new Set();
+age.add(30).add(900).add(50).add(40)
+
+
+console.log(age , age.has(50))
